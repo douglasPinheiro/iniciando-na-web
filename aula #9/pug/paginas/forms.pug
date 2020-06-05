@@ -1,0 +1,61 @@
+extends ../layouts/layout
+
+block conteudo
+    h1 Tags para formulario
+    br
+    br
+
+    form(action='http://localhost:3000' method='POST')
+        fieldset
+            legend Formulario de cadastro
+            label(for='nomeCompleto') Nome completo:
+            input(type='text' name='nomeCompleto')
+            br
+            br
+            label(for='email') Email: 
+            input(type='email' name='email')
+            br
+            br
+            label(for='dataNascimento') Data de nascimento: 
+            input(type='date' name='dataNascimento')
+            br
+            br
+            label(for='senha') Senha: 
+            input(type='password' name='senha')
+            br
+            br
+            label(for='corPreferida') Cor preferido
+            input(type='color' name='corPreferida')
+            br
+            br
+            label(for='curriculo') Curriculo: 
+            input(type='file' name='curriculo')
+            br
+            br
+            input(type='radio' name='genero' value='masculino' checked='')
+            label(for='masculino') Masculino
+            br
+            input(type='radio' name='genero' value='feminino')
+            label(for='feminino') Feminino
+            br
+            input(type='radio' name='genero' value='outros')
+            label(for='outros') Outros
+            br
+            br
+            input(type='checkbox' name='planoOdontologico')
+            label(for='planoOdontologico') Plano Odontologico
+            br
+            input(type='checkbox' name='planoMedico')
+            label(for='planoMedico') Plano Medico
+            br
+            label(for='descricao') Descri&ccedil;&atilde;o: 
+            textarea(name='descricao' cols='20' rows='10')
+            br
+            br
+            input(type='hidden' name='usuarioId' value='123')
+            label(for='salario') Salario: 
+            input(type='number' name='salario' value='1000' step='100' min='400' max='30000')
+            br
+            br
+            input(type='submit' value='Submeter o formulario')
+            input(type='reset' value='Resetar valores')

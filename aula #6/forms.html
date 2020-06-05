@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>formularios</title>
+</head>
+<body>
+    <h1>Tags para formulario</h1>
+    <hr />
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="index.html">Tags de Formatação</a></li>
+                <li><a href="lista.html">Tags de Lista</a></li>
+                <li><a href="forms.html">Tags de Formulario</a></li>
+                <li><a href="layout.html">Tags de Layout</a></li>
+            </ul>
+        </nav>
+    </section>
+    
+    <br><br>
+
+    <form action="http://localhost:3000" method="POST">
+        <fieldset>
+            <legend>Formulario de cadastro</legend>
+
+            
+            <label for="nomeCompleto">Nome completo:</label>
+            <input type="text" name="nomeCompleto"><br><br>
+
+            <label for="email">Email: </label>
+            <input type="email" name="email"><br><br>
+
+            <label for="dataNascimento">Data de nascimento: </label>
+            <input type="date" name="dataNascimento"><br><br>
+
+            <label for="senha">Senha: </label>
+            <input type="password" name="senha"><br><br>
+
+            <label for="corPreferida">Cor preferido</label>
+            <input type="color" name="corPreferida"><br><br>
+
+            <label for="curriculo">Curriculo: </label>
+            <input type="file" name="curriculo"><br><br>
+
+            <input type="radio" name="genero" value="masculino" checked>
+            <label for="masculino">Masculino</label><br>
+
+            <input type="radio" name="genero" value="feminino">
+            <label for="feminino">Feminino</label><br>
+
+            <input type="radio" name="genero" value="outros">
+            <label for="outros">Outros</label><br><br>
+
+            <input type="checkbox" name="planoOdontologico">
+            <label for="planoOdontologico">Plano Odontologico</label><br>
+            
+            <input type="checkbox" name="planoMedico">
+            <label for="planoMedico">Plano Medico</label><br>
+
+            <label for="descricao">Descrição: </label>
+            <textarea name="descricao" cols="20" rows="10"></textarea><br><br>
+
+            <input type="hidden" name="usuarioId" value="123">
+
+            <label for="salario">Salario: </label>
+            <input type="number" name="salario" value="1000" step="100" min="400" max="30000">
+
+            <br><br>
+            <input type="submit" value="Submeter o formulario">
+            <input type="reset" value="Resetar valores">
+        </fieldset>
+    </form>
+</body>
+</html>
